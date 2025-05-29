@@ -15,6 +15,9 @@ body {
     /* slightly bold */
 }
 
+div:hover {
+    cursor: pointer;
+}
 
 .app {
     width: 100vw;
@@ -223,4 +226,33 @@ body {
 
 .footer-actions div p {
     font-size: medium;
+}
+
+.accountpage {
+    display: none;
+}
+
+.opt {
+    font-size: xx-large;
+    font-weight: 800;
+   
+   
+}
+
+.opts{
+    position: relative;
+    height: 35px;
+    width: 140px;
+    text-align: right;
+}
+.log {
+    position: absolute;
+    padding: 20px;
+    right:0;
+    background-color: white;
+    display: none;
+   box-shadow: 0 0 10px rgba(128, 0, 128, 0.699);
+}
+.opts:hover .log{
+    display: block;
 }
