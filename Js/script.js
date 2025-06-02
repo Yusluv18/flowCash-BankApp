@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(".his").click(function () {
         $(".history").slideToggle()
     })
-     $(".login").click(function () {
+     $("#login").click(function () {
         $(".mybankpage").show()
          $(".accountpage").hide()
     })
