@@ -2,7 +2,21 @@ $(document).ready(function () {
     $(".his").click(function () {
         $(".history").slideToggle()
     })
+        $(".wid").click(function () {
+        $(".casf").slideToggle()
+         $(".typejs").text("Withdraw")
+    })
 
+    $(".dep").click(function () {
+        $(".casf").slideToggle()
+         $(".typejs").text("Deposite")
+    })
+    
+     $(".opt").click(function () {
+        $(".log").slideToggle()
+         $(".profile-info").hide()
+          $(".profile").removeClass('half')
+    })
     $("#login").click(function () {
         $(".mybankpage").show()
         $(".accountpage").hide()
@@ -14,12 +28,11 @@ $(document).ready(function () {
     })
 
     $(".profile").click(function () {
-        $(".profile-info").show()
+        $(".profile-info").slideToggle()
+         $(".profile").toggleClass('half')
+
     })
 
-    $(".close-btn").click(function () {
-        $(".profile-info").hide()
-    })
 
     $(".edit-icon").click(function () {
         $(".done-icon").show()
@@ -40,4 +53,8 @@ $(document).ready(function () {
         $("#signupForm").hide()
         $("#loginForm").show()
     })
+
+    
+
+    
 })
